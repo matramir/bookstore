@@ -6,7 +6,8 @@ Program that stores Title, Author, Year, ISBN
 User can View, Search, Add, Update, Delete, close
 """
 
-database = Database()
+database = Database("books.db")
+
 def get_selected_row(event):
     try:
         global selected_tuple
